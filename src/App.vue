@@ -1,26 +1,16 @@
 <template>
   <div id="app">
-    <nav>
-      <div class="nav-container">
-        <router-link class="nav-item" active-class="nav-item--active" to="/">Home</router-link>
-        <router-link class="nav-item" active-class="nav-item--active" to="/students">Students</router-link>
-        <router-link class="nav-item" active-class="nav-item--active" to="/teachers">Teachers</router-link>
-        <router-link class="nav-item" active-class="nav-item--active" to="/grades">Grades</router-link>
-      </div>
-    </nav>
-    <div class="content-container">
       <router-view/>
-    </div>
   </div>
 </template>
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
-import StudentsView from '@/views/StudentsView.vue';
+import Entity1View from '@/views/Entity1View.vue';
 
 @Options({
   components: {
-    StudentsView,
+    Entity1View,
   },
 })
 export default class App extends Vue {}
